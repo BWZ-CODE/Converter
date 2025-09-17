@@ -58,7 +58,7 @@ struct ContentView: View {
                                     do {
                                         let response = try await APINetwork().getMoney()
                                         if let USDrate = response.conversion_rates["USD"],//en estas lineas basicamente lo que hace es traer el valor que tiene USD
-                                           let COPrate = response.conversion_rates["COP"],//esta es innecesaria porque el link que traemos es el de COP
+//                                           let COPrate = response.conversion_rates["COP"],//esta es innecesaria porque el link que traemos es el de COP
                                            let EURrate = response.conversion_rates["EUR"]//Lo mismo que US pero con EUR
                                         {
                                             if let valorIngresado = Double(self.valor1){
@@ -88,7 +88,7 @@ struct ContentView: View {
                                     do {
                                         let response = try await APINetwork().getMoney()
                                         if let USDrate = response.conversion_rates["USD"],//en estas lineas basicamente lo que hace es traer el valor que tiene USD
-                                           let COPrate = response.conversion_rates["COP"],//esta es innecesaria porque el link que traemos es el de COP
+//                                           let COPrate = response.conversion_rates["COP"],//esta es innecesaria porque el link que traemos es el de COP
                                            let EURrate = response.conversion_rates["EUR"]//Lo mismo que US pero con EUR
                                         {
                                             if let valorIngresado = Double(self.valor2){
@@ -117,7 +117,7 @@ struct ContentView: View {
                                     do {
                                         let response = try await APINetwork().getMoney()
                                         if let USDrate = response.conversion_rates["USD"],//en estas lineas basicamente lo que hace es traer el valor que tiene USD
-                                           let COPrate = response.conversion_rates["COP"],//esta es innecesaria porque el link que traemos es el de COP
+//                                           let COPrate = response.conversion_rates["COP"],//esta es innecesaria porque el link que traemos es el de COP
                                            let EURrate = response.conversion_rates["EUR"]//Lo mismo que US pero con EUR
                                         {
                                             if let valorIngresado = Double(self.valor3){
