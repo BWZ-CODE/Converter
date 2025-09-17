@@ -136,9 +136,9 @@ struct ContentView: View {
                     
                     Section{
                         Button(action: {
-                           valor1 = "0"
-                            valor2 = "0"
-                            valor3 = "0"
+                           valor1 = ""
+                            valor2 = ""
+                            valor3 = ""
                             animation.toggle()
                         }){
                             Label("", systemImage:"arrow.trianglehead.counterclockwise")
